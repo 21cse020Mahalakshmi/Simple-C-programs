@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{   
+    int temp, i,org_num,num,sum=0,digit=0;
+    printf("Enter number");
+    scanf("%d",&num);
+    org_num=num;
+    temp=org_num;
+    while( temp>0)
+    {
+         temp= temp/10;
+         digit++;
+    }
+    while( org_num>0)
+    {
+         sum+=pow((org_num%10),digit);
+         org_num=org_num/10;
+    }
+    if(sum==num)
+    {
+        printf("amrstrong number");
+    }
+    else{
+        printf("not an amstrong number");
+    }
+    return 0;
+}
