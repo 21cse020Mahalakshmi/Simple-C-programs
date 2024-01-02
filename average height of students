@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+
+int main()
+{   int average,sum=0,n;
+    printf("enter the number of students:");
+    scanf("%d",&n);
+    int height[n];
+    for(int i=0;i<n;i++)
+    {
+        printf("enter the height of %d",i+1 );
+        scanf("%d",&height[i]);
+        
+    }
+    for(int i=0;i<n;i++)
+    {   sum=sum+height[i];
+        
+        
+    }
+  average=sum/n;
+  printf("sum of heights:%d",sum );
+  printf("avg height of students:%d",average);
+    return 0;
+}
